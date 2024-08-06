@@ -89,7 +89,7 @@ nav button {
 
 .separation{
     height: 7px;
-    background-color: rgb(53, 51, 51);
+    background-color: rgb(37, 36, 36);
 }
 
 @media only screen and (max-width: 600px){
@@ -123,6 +123,45 @@ nav button {
         z-index: 1;
     }
 
+    .first{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 73vw;
+    margin: auto;
+    color: white;
+    }
+    
+    .hero2> :first-child{
+        font-size: 20px; 
+        font-weight: 900;
+    }
+    
+    .hero2> :nth-child(2){
+        font-size: 20px;
+        font-weight: 200;
+    }
+    
+    .secImg img{
+        width: 35vw;
+        position: relative;
+        z-index: 10;
+        top: 50px;
+    
+    }
+    
+    .secImg {
+        position: relative;
+    }
+    
+    .secImg video{
+        width: 30vw;
+        position: absolute;
+        top: 100px;
+        right: 5px;
+    }
+
 }
 
 .btn{
@@ -134,6 +173,7 @@ nav button {
     background-color: rgba(248, 243,243, 0.021);
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .sn{
@@ -174,3 +214,47 @@ nav button {
     font-size: 24px;
     font-weight: 500;
 }
+
+.btn:hover{
+    background-color: rgb(204, 49, 49);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 73vw;
+    margin: auto;
+    color: white;
+    padding: 80px;
+}
+
+.hero2> :first-child{
+    font-size: 48px; 
+    font-weight: 900;
+}
+
+.hero2> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secImg img{
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+    top: 6.4px;
+
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg video{
+    width: 29vw;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+
