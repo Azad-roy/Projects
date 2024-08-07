@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
 * {
-
-
-    margin: 0px;
-    padding: 0px;
-    font-family:"Open Sans", sans-serif ;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -14,82 +11,81 @@ body {
 }
 
 .main {
-    background: url("/image/download.jpeg");
-    height: 70vh;
-    background-size: max(1200px, 100vw);
-    position: relative;
+    background-image: url("/image/download.jpeg");
     background-position: center center;
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
 }
 
 .main .box {
+    height: 644px;
     width: 100%;
-    height: 70vh;
-    opacity: 0.6;
-    background-color: black;
+    opacity: 0.69;
     position: absolute;
     top: 0;
+    background-color: black;
 }
 
 nav {
     max-width: 60vw;
+    justify-content: space-between;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 62px;
+    height: 100px;
 }
 
 nav img {
-    width: 165px;
+    color: red;
+    width: 130px;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 nav button {
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .hero {
-    height: calc(100% - 62px);
-    
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 10px;
-    padding: 0px 30px;
+    gap: 23px;
+    padding: 0 30px;
 }
 
-.hero> :first-child {
-
-    font-family: "Open Sans", sans-serif;
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     font-size: 48px;
-    font-weight: 900;
     text-align: center;
 }
 
 .hero> :nth-child(2) {
-    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     font-size: 24px;
-    font-weight: 600;
     text-align: center;
 }
 
 .hero> :nth-child(3) {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
     text-align: center;
-    padding-top: 15px;
 }
 
-.separation{
+.separation {
     height: 7px;
-    background-color: rgb(37, 36, 36);
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 @media only screen and (max-width: 600px){
@@ -223,27 +219,32 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 73vw;
+    max-width: 70vw;
     margin: auto;
     color: white;
-    padding: 80px;
 }
 
-.hero2> :first-child{
-    font-size: 48px; 
-    font-weight: 900;
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
 }
 
-.hero2> :nth-child(2){
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
     font-size: 24px;
-    font-weight: 400;
+
 }
 
 .secImg img{
-    width: 35vw;
+    width: 555px;
     position: relative;
     z-index: 10;
-    top: 6.4px;
 
 }
 
@@ -252,9 +253,53 @@ nav button {
 }
 
 .secImg video{
-    width: 29vw;
+    width: 555px;
     position: absolute;
-    top: 100px;
+    top: 51px;
     right: 0px;
 }
 
+.faq h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    padding-top:55px;
+}
+
+.faqbox{
+    color: white;
+    background-color: #2d2d2d;
+    width: 1400px;
+    margin: 10px auto;
+    padding: 28px;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq svg{
+    filter: invert(1);
+}
+
+.ready{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 0px 20px 0px;
+}
+
+.main2 input{
+    padding: 12px 110px 12px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    /* background-color: transparent; */
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.466);
+}
