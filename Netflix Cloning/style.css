@@ -211,8 +211,12 @@ nav button {
     font-weight: 500;
 }
 
-.btn:hover{
-    background-color: rgb(204, 49, 49);
+.btn-red:hover{
+    background-color: rgb(182, 68, 68);
+}
+
+.btn-red-sn:hover{
+    background-color: rgb(182, 68, 68);
 }
 
 .first{
@@ -269,15 +273,21 @@ section.first>div :nth-child(2) {
 }
 
 .faqbox{
+    transition:all 0.2s ease-out;
     color: white;
     background-color: #2d2d2d;
-    width: 1400px;
+    max-width:70vw;
     margin: 10px auto;
     padding: 28px;
     font-size: 24px;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+}
+
+.faqbox:hover{
+    cursor: pointer;
+    background-color: #383737;
 }
 
 .faq svg{
@@ -302,4 +312,55 @@ section.first>div :nth-child(2) {
     background-color: rgba(23, 23, 23, 0.2);
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.466);
+}
+.main2 {
+    padding-bottom: 70px;
+}
+
+.questions{
+    padding: 34px 0px;
+    color: rgb(204, 202, 202);;
+}
+
+footer{
+    max-width: 70vw;
+    margin: auto;
+    padding: 50px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-item a {
+    color: rgb(204, 202, 202);
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.btn2{
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(248, 243,243, 0.021);
+    color: rgb(204, 202, 202);
+    border: 1px solid white;
+    cursor: pointer;
+    width: 100px;
+}
+
+.india{
+    padding-top: 20px;
+    color: rgb(204, 202, 202);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
